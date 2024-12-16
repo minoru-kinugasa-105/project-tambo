@@ -1,0 +1,192 @@
+.explanation {
+    background-color: var(--color-yellowgreen-50);
+
+    .explanation-text {
+        padding-top: 2rem;
+
+        .explanation-text-tit {
+            font-size: 2rem;
+            text-align: center;
+
+            .strong {
+                margin-right: -1rem;
+                font-size: 4rem;
+                font-weight: 500;
+            }
+        }
+        .explanation-text-desc {
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin-top: 0.8rem;
+            text-align: center;
+        }
+    }
+    .explanation-induction {
+        text-align: center;
+        font-size: 1.25rem;
+        margin-top: 1rem;
+        font-weight: 400;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-image: url(../../../asetts/images/arrow-symbol.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin: 0.5rem auto 0;
+        }
+    }
+    .explanation-card {
+        .card {
+            width: 70vw;
+            margin: 0.75rem auto 0;
+
+            .card-headline {
+                height: 64px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 2rem;
+                background-color: var(--color-yellowgreen-100);
+                border-radius: 7px;
+                overflow: hidden;
+
+                .headline-text {
+                    font-size: 1.25rem;
+
+                    .num {
+                        font-size: 1.5rem;
+                    }
+                }
+                img {
+                    width: 30px;
+                    height: 30px;
+
+                    &.direction-top {
+                        transform: rotate(270deg);
+                    }
+                    &.direction-bottom {
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+            .card-content {
+                background-color: var(--color-white);
+                border-radius: 0 0 7px 7px;
+                padding: 1rem 1rem 2rem 1rem;
+
+                &.content-1 {
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 1rem;
+                    padding: 1rem;
+
+                    .content-text {
+                        width: 40%;
+                        font-weight: 300;
+                        line-height: 1.5;
+                        font-size: 1.1em;
+                        letter-spacing: 0.1em;
+
+                        p {
+                            margin: 0;
+
+                            br {
+                                display: block;
+                            }
+                        }
+                        ul {
+                            list-style: none;
+                            padding-left: 0.25rem;
+
+                            li {
+                                &::before {
+                                    content: "・";
+                                }
+                            }
+                        }
+                    }
+                    .content-img {
+                        width: 40%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+
+                        img {
+                            width: 50%;
+                            height: auto;
+                        }
+                    }
+                }
+                &.content-2 {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    .content-item {
+                        width: calc(49% - 1rem);
+                        padding: 1rem 2rem 1rem 1rem;
+                        position: relative;
+
+                        &:last-child {
+                            padding: 1rem 1rem 1rem 2rem;
+
+                            &::before {
+                                content: "";
+                                display: block;
+                                position: absolute;
+                                top: 50%;
+                                left: 0;
+                                transform: translateY(-50%);
+                                width: 1px;
+                                height: 80%;
+                                opacity: 0.5;
+                                background-color: var(--color-gray);
+                            }
+                        }
+
+                        .item-img {
+                            height: 250px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+
+                            img {
+                                margin-bottom: 2rem;
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                        .item-text {
+                            p {
+                                .tit {
+                                    display: block;
+                                    font-size: 1.1rem;
+                                    font-weight: 500;
+                                    padding-bottom: 1rem;
+                                }
+                                br {
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .explanation-decoration {
+        width: 100%;
+        height: 15rem;
+        position: relative;
+
+        img {
+            position: absolute;
+            left: 4rem;
+            bottom: -5px;
+        }
+    }
+}

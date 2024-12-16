@@ -1,0 +1,114 @@
+.narration {
+    .narration-body {
+        height: 50vw;
+        background-image: url(../../../asetts/images/narration.png);
+        background-size: cover;
+        background-position: center;
+        padding: 2rem 6rem 0 6rem;
+
+        .body-tit {
+            color: var(--color-white);
+            font-size: 1.75em;
+            font-weight: 500;
+            letter-spacing: 0.1rem;
+            line-height: 1.75;
+
+            br {
+                display: block;
+            }
+        }
+    }
+    .narration-bubble {
+        width: 70%;
+        margin: -20rem auto 0;
+
+        .overlap {
+            background-image: linear-gradient(to bottom, var(--color-yellowgreen-100_transparent), var(--color-yellowgreen-100));
+            border-radius: 1rem 1rem 0 0;
+
+            .bubble-list {
+                padding-top: 1rem;
+                list-style: none;
+                width: 60%;
+                margin: 0 auto;
+
+                .bubble-item {
+                    width: 100%;
+                    font-size: 1.1rem;
+                    font-weight: 500;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-top: 1.5rem;
+
+                    span {
+                        width: calc(100% - 30px);
+                    }
+
+                    &::before {
+                        content: "";
+                        display: block;
+                        background-image: url(../../../asetts/images/check.png);
+                        background-size: cover;
+                        background-position: center;
+                        margin-right: 1.5rem;
+                        width: 30px;
+                        height: 25px;
+                    }
+                }
+            }
+            .bubble-target {
+                text-align: center;
+                font-size: 1.25em;
+                margin: 3rem 0 0 0;
+                border-bottom: 1px solid var(--color-gray_transparent);
+
+                .highlight {
+                    position: relative;
+
+                    &:before {
+                        $highlight-height: 4px;
+
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        bottom: calc(0.1rem + $highlight-height);
+                        left: 0;
+                        width: 90%;
+                        height: $highlight-height;
+                        border-radius: $highlight-height;
+                        background-color: rgba(var(--color-red), 0.4);
+                    }
+                }
+            }
+        }
+        .bubble-solution {
+            background-color: var(--color-yellowgreen-100);
+            padding: 1rem 1rem 2rem 1rem;
+            text-align: center;
+            margin-top: 0;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+            position: relative;
+            border-radius: 0 0 1rem 1rem;
+
+            &::after {
+                content: "";
+                border-left: 30px solid transparent;
+                border-right: 30px solid transparent;
+                position: absolute;
+                bottom: -40px;
+                left: 50%;
+                transform: translateX(-50%);
+                border-top: 40px solid var(--color-yellowgreen-100);
+                width: 0;
+                height: 0;
+                filter: drop-shadow(0 4px 2px rgba(0, 0, 0, 0.25));
+            }
+
+            .strong {
+                font-size: 1.75em;
+                font-weight: 500;
+            }
+        }
+    }
+}

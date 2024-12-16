@@ -1,0 +1,205 @@
+.points {
+    padding-top: 5rem;
+    width: 100vw;
+    overflow: hidden;
+
+    .point-headline {
+        text-align: center;
+        font-size: 1.75rem;
+        font-weight: 400;
+        margin-bottom: 4rem;
+
+        .strong {
+            font-size: 3.75rem;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+    }
+
+    .point-list {
+        width: 80vw;
+        margin: 0 auto;
+
+        .point-item {
+            margin-top: 4rem;
+            display: flex;
+            width: 100%;
+            gap: 2rem;
+            justify-content: space-between;
+            position: relative;
+
+            &.item-1_bg {
+                .point-text {
+                    .point-desc {
+                        &::before {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            top: 50px;
+                            right: 20px;
+                            width: 260px;
+                            height: 170px;
+                            background-image: url(../../../asetts/images/point/decoration-1.svg);
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+                    }
+                }
+            }
+            &.item-3_bg {
+                .point-text {
+                    .point-desc {
+                        &::before {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            top: 50px;
+                            right: 20px;
+                            width: 220px;
+                            height: 160px;
+                            background-image: url(../../../asetts/images/point/decoration-2.svg);
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+                    }
+                }
+            }
+            &.item-2_bg {
+                &::before {
+                    position: absolute;
+                    top: -20%;
+                    left: -25%;
+                    content: "";
+                    display: block;
+                    width: 150%;
+                    height: 450px;
+                    background-color: var(--color-yellowgreen-100);
+                    rotate: 355deg;
+                    z-index: -1;
+                }
+            }
+
+            .point-img {
+                width: 400px;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .point-text {
+                width: calc(80vw - 400px - 4rem);
+                text-align-last: left;
+
+                .point-headline {
+                    font-size: 2rem;
+                    font-weight: 500;
+                    margin-bottom: 1.5rem;
+                    position: relative;
+
+                    &.item-1,
+                    &.item-2,
+                    &.item-3 {
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: -50px;
+                            left: -60px;
+                            z-index: -1;
+                            display: block;
+                            width: 230px;
+                            height: 95px;
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                        }
+                    }
+
+                    &.item-1 {
+                        &::before {
+                            background-image: url(../../../asetts/images/point/point-1.svg);
+                        }
+                    }
+                    &.item-2 {
+                        &::before {
+                            background-image: url(../../../asetts/images/point/point-2.svg);
+                        }
+                    }
+                    &.item-3 {
+                        &::before {
+                            background-image: url(../../../asetts/images/point/point-3.svg);
+                        }
+                    }
+                }
+                .point-desc {
+                    font-size: 1.25rem;
+                    font-weight: 400;
+
+                    br {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .point-nav {
+        margin: 0 auto;
+        width: max-content;
+        position: relative;
+
+        .nav-btn {
+            background-color: var(--color-yellowgreen-500);
+            width: 350px;
+            height: 60px;
+            border-radius: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-top: 3rem;
+
+            .btn-text {
+                text-decoration: none;
+                color: var(--color-white);
+                font-weight: 700;
+                font-size: 1.5rem;
+                text-align: center;
+                display: block;
+                width: max-content;
+            }
+            img {
+                position: absolute;
+                bottom: 50%;
+                right: 2rem;
+                transform: translateY(50%);
+                width: 20px;
+                height: 20px;
+                display: block;
+                width: max-content;
+            }
+        }
+
+        .arrow {
+            display: block;
+            width: max-content;
+            margin: 7rem auto 0;
+            padding-bottom: 2rem;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -4px;
+            right: -20vw;
+            width: 155px;
+            height: 170px;
+            background-image: url(../../../asetts/images/tree.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    }
+}

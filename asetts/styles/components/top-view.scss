@@ -1,0 +1,98 @@
+.top {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(../../../asetts/images/top-view.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 4rem;
+
+    .top-slogan {
+        font-family: "Sawarabi Mincho", sans-serif;
+
+        .slogan-tit {
+            font-weight: 400;
+            font-size: 3rem;
+            margin-bottom: 4rem;
+            color: var(--color-white);
+        }
+        .slogan-desc {
+            font-weight: 400;
+            font-size: 1.5rem;
+            color: var(--color-white);
+
+            br {
+                display: block;
+            }
+        }
+    }
+    .top-feature {
+
+        .feature-point {
+
+            &:last-child {
+                margin-top: 2rem;
+            }
+
+            .feature-point-row {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+
+                .point {
+                    width: 120px;
+                    height: 120px;
+                    margin: 2rem;
+                    border-radius: 50%;
+                    background-color: var(--color-yellowgreen-100);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    text-align: center;
+                    font-weight: 500;
+                    box-shadow: 0 0 25px 25px var(--color-yellowgreen-100);
+
+                    br {
+                        display: block;
+                    }
+                }
+            }
+        }
+        .feature-nav {
+            background-color: var(--color-yellowgreen-500);
+            width: 350px;
+            height: 60px;
+            border-radius: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-top: 3rem;
+
+            a {
+                text-decoration: none;
+                color: var(--color-white);
+                font-weight: 700;
+                font-size: 1.5rem;
+                text-align: center;
+                display: block;
+                width: max-content;
+            }
+            img {
+                position: absolute;
+                bottom: 50%;
+                right: 2rem;
+                transform: translateY(50%);
+                width: 20px;
+                height: 20px;
+                display: block;
+                width: max-content;
+            }
+        }
+    }
+}

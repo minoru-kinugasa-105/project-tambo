@@ -1,0 +1,106 @@
+.voice {
+    background-color: var(--color-white);
+    padding-top: 2rem;
+
+    .voice-tit {
+        text-align: center;
+        font-size: 3.75rem;
+        font-weight: 500;
+        line-height: 1.5;
+    }
+    .voice-container {
+        width: max-content;
+        margin: 0 auto;
+
+        .voice-grid {
+            display: flex;
+            gap: 4rem;
+            margin-top: 2rem;
+
+            .grid-item {
+                width: 550px;
+                height: 325px;
+                border-radius: 1rem;
+                overflow: hidden;
+                background-color: var(--color-yellowgreen-50);
+                position: relative;
+                box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+                .item-company {
+                    font-size: 0.75rem;
+                    z-index: 2;
+                    position: absolute;
+                    top: 1rem;
+                    left: 1.5rem;
+                }
+                .item-body {
+                    z-index: 2;
+                    position: absolute;
+                    top: 4rem;
+                    left: 0;
+
+                    .item-post {
+                        color: var(--color-gray);
+                        font-size: 0.9rem;
+                        margin: 0 0 -6px 10%;
+                    }
+                    .item-author {
+                        display: flex;
+                        gap: 1rem;
+                        margin-left: 10%;
+
+                        .author-intro {
+                            width: 40%;
+
+                            .author-name {
+                                font-size: 1.75rem;
+                                font-weight: 500;
+                            }
+                            .author-img {
+                                width: 180px;
+                                height: 170px;
+                                overflow: hidden;
+                                border-radius: 1rem;
+                                margin-top: 1rem;
+
+                                img {
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                        }
+                        .author-desc {
+                            font-size: 0.9rem;
+                            width: 50%;
+
+                            br {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: -32rem;
+                    width: 200%;
+                    height: 350px;
+                    background-color: var(--color-yellowgreen-100);
+                    rotate: -420deg;
+                }
+            }
+        }
+    }
+    .voice-decoration {
+        height: 15rem;
+        position: relative;
+
+        img {
+            position: absolute;
+            bottom: -5px;
+            right: 20vw;
+        }
+    }
+}
