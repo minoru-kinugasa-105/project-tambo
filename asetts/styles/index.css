@@ -1688,7 +1688,7 @@ body {
 }
 @media screen and (max-width: 512px) {
   .process .process-body .process-grid .process-grid-item.item-1 .item-img {
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
 }
 .process .process-body .process-grid .process-grid-item .item-tit {
