@@ -76,9 +76,16 @@
                 overflow: hidden;
                 list-style: none;
                 -webkit-appearance: none;
+                &::-webkit-details-marker {
+                    display: none;
+                }
 
                 .headline-text {
                     font-size: 1.25rem;
+
+                    @media screen and (max-width: 512px) {
+                        font-size: 1.11rem;
+                    }
 
                     .num {
                         font-size: 1.5rem;
