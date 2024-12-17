@@ -36,7 +36,7 @@
             margin-top: 4rem;
             display: flex;
             width: 100%;
-            gap: 2rem;
+            gap: 6rem;
             justify-content: space-between;
             position: relative;
 
@@ -193,6 +193,7 @@
                 .point-desc {
                     font-size: 1.25rem;
                     font-weight: 400;
+                    width: 100%;
                     @media screen and (max-width: 1024px) {
                         font-size: 1rem;
                     }
@@ -250,7 +251,6 @@
             display: block;
             width: max-content;
             margin: 7rem auto 0;
-            padding-bottom: 2rem;
 
             img {
                 @media screen and (max-width: 1024px) {

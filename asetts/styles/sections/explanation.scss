@@ -112,6 +112,7 @@
                         font-weight: 300;
                         line-height: 1.5;
                         font-size: 1.1em;
+                        margin-left: 1rem;
                         letter-spacing: 0.1em;
 
                         @media screen and (max-width: 1024px) {
@@ -120,6 +121,8 @@
 
                         p {
                             margin: 0;
+                            font-size: 1rem;
+                            font-weight: 400;
 
                             br {
                                 display: block;
@@ -127,9 +130,11 @@
                         }
                         ul {
                             list-style: none;
+                            font-size: 1rem;
                             padding-left: 0.25rem;
 
                             li {
+                                font-weight: 400;
                                 &::before {
                                     content: "・";
                                 }
@@ -143,13 +148,18 @@
                         justify-content: center;
 
                         @media screen and (max-width: 1024px) {
-                            width: 50%;
-                            margin-left: 50%;
+                            width: 75%;
+                            margin-left: 25%;
                         }
 
                         img {
                             width: 50%;
                             height: auto;
+                        }
+                        &.img-2 {
+                            img {
+                                width: 80%;
+                            }
                         }
                     }
                 }
@@ -200,7 +210,7 @@
                                 height: 1px;
                                 opacity: 0.5;
                                 background-color: var(--color-gray);
-                                
+
                                 @media screen and (max-width: 512px) {
                                     display: block;
                                 }
@@ -220,7 +230,12 @@
                             }
                         }
                         .item-text {
+                            margin-left: 1rem;
+
                             p {
+                                font-size: 1rem;
+                                font-weight: 400;
+
                                 .tit {
                                     display: block;
                                     font-size: 1.1rem;
