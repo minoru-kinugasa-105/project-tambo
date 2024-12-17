@@ -1488,10 +1488,6 @@ body {
     padding-top: 6rem;
   }
 }
-.intro .intro-card .intro-decoration img {
-  width: 50px;
-  height: 50px;
-}
 @media screen and (max-width: 1024px) {
   .intro .intro-card .intro-decoration img {
     width: 26px;
