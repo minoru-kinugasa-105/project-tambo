@@ -609,6 +609,8 @@ body {
   background-color: var(--color-yellowgreen-100);
   border-radius: 7px;
   overflow: hidden;
+  list-style: none;
+  -webkit-appearance: none;
 }
 .explanation .explanation-card .card .card-headline .headline-text {
   font-size: 1.25rem;
