@@ -1985,7 +1985,7 @@ body {
 }
 .voice .voice-decoration img {
   position: absolute;
-  bottom: -5px;
+  bottom: -3.5px;
   right: 20vw;
 }
 @media screen and (max-width: 512px) {
