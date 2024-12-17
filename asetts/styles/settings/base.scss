@@ -1,5 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-general);
     background-color: var(--color-yellowgreen-50);
     color: var(--color-black);
+
+    @media screen and (max-width: 1024px) {
+        font-size: 14px;
+    }
 }

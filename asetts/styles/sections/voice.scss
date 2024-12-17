@@ -4,8 +4,6 @@
 
     .voice-tit {
         text-align: center;
-        font-size: 3.75rem;
-        font-weight: 500;
         line-height: 1.5;
     }
     .voice-container {
@@ -17,6 +15,11 @@
             gap: 4rem;
             margin-top: 2rem;
 
+            @media screen and (max-width: 1024px) {
+                flex-direction: column;
+                gap: 2rem;
+            }
+
             .grid-item {
                 width: 550px;
                 height: 325px;
@@ -26,35 +29,60 @@
                 position: relative;
                 box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
+                @media screen and (max-width: 1024px) {
+                    width: 90vw;
+                    height: 51vw;
+                }
+
                 .item-company {
                     font-size: 0.75rem;
                     z-index: 2;
                     position: absolute;
                     top: 1rem;
                     left: 1.5rem;
+                    @media screen and (max-width: 1024px) {
+                        font-size: 0.5rem;
+                    }
                 }
                 .item-body {
                     z-index: 2;
                     position: absolute;
                     top: 4rem;
                     left: 0;
+                    @media screen and (max-width: 1024px) {
+                        top: 2rem;
+                    }
 
                     .item-post {
                         color: var(--color-gray);
                         font-size: 0.9rem;
                         margin: 0 0 -6px 10%;
+                        @media screen and (max-width: 1024px) {
+                            font-size: 0.6rem;
+                            margin-left: 5%;
+                        }
                     }
                     .item-author {
                         display: flex;
                         gap: 1rem;
                         margin-left: 10%;
+                        @media screen and (max-width: 1024px) {
+                            margin-left: 5%;
+                        }
 
                         .author-intro {
                             width: 40%;
 
+                            @media screen and (max-width: 1024px) {
+                                width: max-content;
+                            }
+
                             .author-name {
                                 font-size: 1.75rem;
                                 font-weight: 500;
+                                @media screen and (max-width: 1024px) {
+                                    font-size: 1.25rem;
+                                }
                             }
                             .author-img {
                                 width: 180px;
@@ -62,6 +90,10 @@
                                 overflow: hidden;
                                 border-radius: 1rem;
                                 margin-top: 1rem;
+                                @media screen and (max-width: 1024px) {
+                                    width: 100px;
+                                    height: 90px;
+                                }
 
                                 img {
                                     width: 100%;
@@ -72,6 +104,10 @@
                         .author-desc {
                             font-size: 0.9rem;
                             width: 50%;
+                            @media screen and (max-width: 1024px) {
+                                font-size: 0.75rem;
+                                width: 60%;
+                            }
 
                             br {
                                 display: block;
@@ -92,15 +128,44 @@
                 }
             }
         }
+        .read-more {
+            .voice-grid {
+                @media screen and (max-width: 1024px) {
+                    display: none;
+                }
+            }
+            .more-btn {
+                display: none;
+                color: var(--color-yellowgreen-500);
+                text-decoration: underline;
+                text-align: center;
+                margin-top: 2rem;
+                cursor: pointer;
+
+                @media screen and (max-width: 1024px) {
+                    display: block;
+                }
+            }
+        }
     }
     .voice-decoration {
         height: 15rem;
         position: relative;
 
+        @media screen and (max-width: 1024px) {
+            height: 10rem;
+        }
+
         img {
             position: absolute;
             bottom: -5px;
             right: 20vw;
+
+            @media screen and (max-width: 1024px) {
+                width: 120px;
+                height: 130px;
+                right: 10vw;
+            }
         }
     }
 }

@@ -1,0 +1,172 @@
+.top {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url(../../../asetts/images/top-view.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 4rem;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        background-position: -4rem 0;
+        padding: 0 1rem 0 5rem;
+    }
+
+    @media screen and (max-width: 512px) {
+        align-items: center;
+        padding-left: 1rem;
+    }
+
+    .top-slogan {
+        font-family: "Sawarabi Mincho", sans-serif;
+
+        .slogan-tit {
+            margin-bottom: 4rem;
+            color: var(--color-white);
+
+            @media screen and (max-width: 1024px) {
+                font-size: 4rem;
+                margin-bottom: 2rem;
+            }
+
+            @media screen and (max-width: 512px) {
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+            }
+        }
+        .slogan-desc {
+            color: var(--color-white);
+
+            @media screen and (max-width: 1024px) {
+                font-size: 2rem;
+            }
+            @media screen and (max-width: 512px) {
+                line-height: 1.8;
+                font-size: 1.25rem;
+            }
+
+            br {
+                display: block;
+            }
+        }
+    }
+    .top-feature {
+        .feature-point {
+            @media screen and (max-width: 1024px) {
+                display: none;
+            }
+            &:last-child {
+                margin-top: 2rem;
+            }
+
+            .feature-point-row {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+
+                .point {
+                    width: 120px;
+                    height: 120px;
+                    margin: 2rem;
+                    border-radius: 50%;
+                    background-color: var(--color-yellowgreen-100);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    text-align: center;
+                    font-weight: 500;
+                    box-shadow: 0 0 25px 25px var(--color-yellowgreen-100);
+                    position: relative;
+
+                    br {
+                        display: block;
+                    }
+
+                    &.point-1,
+                    &.point-2,
+                    &.point-3 {
+                        &::before {
+                            display: block;
+                            position: absolute;
+                            width: 85px;
+                            height: 40px;
+                            background-color: var(--color-white_transparent);
+                            top: -.5rem;
+                            border-radius: 20px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            text-align: center;
+                            font-size: 1.25rem;
+                            font-weight: 500;
+                            color: var(--color-black);
+                        }
+                    }
+
+                    &.point-1 {
+                        &::before {
+                            content: "Point 1";
+                            left: -2rem;
+                        }
+                    }
+                    &.point-2 {
+                        &::before {
+                            content: "Point 2";
+                            left: -2rem;
+                        }
+                    }
+                    &.point-3 {
+                        &::before {
+                            content: "Point 3";
+                            right: -2rem;
+                        }
+                    }
+                }
+            }
+        }
+        .feature-nav {
+            background-color: var(--color-yellowgreen-500);
+            width: 350px;
+            height: 60px;
+            border-radius: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin-top: 3rem;
+            @media screen and (max-width: 800px) {
+                width: 250px;
+                height: 50px;
+                border-radius: 18px;
+            }
+
+            a {
+                text-decoration: none;
+                color: var(--color-white);
+                font-weight: 700;
+                font-size: 1.5rem;
+                text-align: center;
+                display: block;
+                width: max-content;
+            }
+            img {
+                position: absolute;
+                bottom: 50%;
+                right: 2rem;
+                transform: translateY(50%);
+                width: 20px;
+                height: 20px;
+                display: block;
+                width: max-content;
+            }
+        }
+    }
+}

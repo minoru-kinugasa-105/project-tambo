@@ -1,8 +1,9 @@
 :root {
-    --color-white: #FFF;
+    --color-white: #FFFFFF;
+    --color-white_transparent: #ffffff80;
     --color-gray: #7C7C7C;
     --color-gray_transparent: #7C7C7C80;
-    --color-black: #000;
+    --color-black: #000000;
     --color-red: 163, 15, 15;
 
     --color-yellowgreen-50: #F7F8EA;
@@ -14,5 +15,5 @@
 
     --font-general: "Zen Maru Gothic", sans-serif;
 
-    --data-header-height: 4rem;
+    --data-header-height: 64px;
 }

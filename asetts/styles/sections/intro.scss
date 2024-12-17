@@ -4,13 +4,12 @@
 
     .intro-tit {
         text-align: center;
-        font-size: 1.75rem;
-        font-weight: 400;
         margin-bottom: 4rem;
+        @media screen and (max-width: 1024px) {
+            margin-bottom: 2rem;
+        }
 
         .strong {
-            font-size: 3.75rem;
-            font-weight: 500;
             line-height: 1.5;
         }
     }
@@ -20,7 +19,9 @@
             font-size: 2.5rem;
             font-weight: 500;
             line-height: 1.5;
-
+            @media screen and (max-width: 1024px) {
+                font-size: 1.5rem;
+            }
             .highlight {
                 position: relative;
 
@@ -45,20 +46,40 @@
             justify-content: center;
             gap: 4rem;
             padding-top: 3rem;
+            @media screen and (max-width: 1024px) {
+                padding-top: 1rem;
+            }
+
+            @media screen and (max-width: 1024px) {
+                flex-direction: column-reverse;
+                gap: 2rem;
+            }
 
             .design-img {
                 img {
                     width: 500px;
                     height: auto;
+                    @media screen and (max-width: 1024px) {
+                        width: 90vw;
+                        height: 50vw;
+                        object-fit: cover;
+                        object-position: 0 -60px;
+                    }
                 }
             }
             .design-text {
                 padding: 1rem 1rem 6rem 1rem;
+                @media screen and (max-width: 1024px) {
+                    padding: 1rem 0;
+                }
 
                 .design-text-tit {
                     font-size: 1.75rem;
                     font-weight: 500;
                     position: relative;
+                    @media screen and (max-width: 1024px) {
+                        font-size: 1.5rem;
+                    }
 
                     &::before {
                         content: "";
@@ -71,10 +92,16 @@
                         background-image: url(../../../asetts/images/intro/point.png);
                         background-size: cover;
                         background-position: center;
+                        @media screen and (max-width: 1024px) {
+                            display: none;
+                        }
                     }
                 }
                 .design-text-desc {
                     font-size: 1.1rem;
+                    @media screen and (max-width: 1024px) {
+                        font-size: 1rem;
+                    }
 
                     br {
                         display: block;
@@ -90,7 +117,11 @@
             position: relative;
             border-radius: 1rem;
             padding: 2rem 3rem 3rem 3rem;
-
+            @media screen and (max-width: 1024px) {
+                width: 90vw;
+                margin: 1rem auto 0;
+                padding: 1rem;
+            }
             .price-tit {
                 text-align: center;
                 font-weight: 500;
@@ -106,18 +137,32 @@
                 object-fit: cover;
                 object-position: center;
                 z-index: 1;
+                @media screen and (max-width: 1024px) {
+                    display: none;
+                }
             }
             .price-desc {
                 max-width: 70%;
                 margin-top: 1rem;
                 font-size: 1.25rem;
                 font-weight: 500;
+
+                @media screen and (max-width: 1024px) {
+                    font-size: 1rem;
+                    max-width: 100%;
+                    font-weight: 400;
+                }
             }
             .price-value {
                 font-weight: 500;
                 font-size: 1.25rem;
+                @media screen and (max-width: 1024px) {
+                    font-size: 1.1rem;
+                }
 
-                .value-limited {}
+                .value-limited {
+                    display: block;
+                }
                 .value-normal {
                     color: var(--color-gray);
                     text-decoration: line-through;
@@ -133,6 +178,11 @@
                 justify-content: center;
                 position: relative;
                 margin-top: 3rem;
+                @media screen and (max-width: 1024px) {
+                    width: 200px;
+                    height: 40px;
+                    border-radius: 10px;
+                }
 
                 .nav-btn {
                     text-decoration: none;
@@ -146,12 +196,17 @@
                 img {
                     position: absolute;
                     bottom: 50%;
-                    right: 2rem;
+                    right: 1rem;
                     transform: translateY(50%);
                     width: 20px;
                     height: 20px;
                     display: block;
                     width: max-content;
+
+                    @media screen and (max-width: 1024px) {
+                        width: 13px;
+                        height: 13px;
+                    }
                 }
             }
         }
@@ -161,10 +216,18 @@
             flex-direction: column;
             align-items: center;
             position: relative;
+            @media screen and (max-width: 1024px) {
+                padding-top: 6rem;
+            }
 
             img {
                 width: 50px;
                 height: 50px;
+
+                @media screen and (max-width: 1024px) {
+                    width: 26px;
+                    height: 20px;
+                }
             }
 
             &::after {
@@ -179,6 +242,10 @@
                 background-size: contain;
                 background-repeat: no-repeat;
                 background-position: center;
+                @media screen and (max-width: 1024px) {
+                    width: 120px;
+                    height: 130px;
+                }
             }
         }
     }

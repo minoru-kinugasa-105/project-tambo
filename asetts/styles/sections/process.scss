@@ -1,8 +1,6 @@
 .process {
     .process-tit {
         text-align: center;
-        font-size: 3.75rem;
-        font-weight: 500;
         line-height: 1.5;
     }
     .process-body {
@@ -13,8 +11,17 @@
             gap: 7rem;
             position: relative;
 
+            @media screen and (max-width: 1024px) {
+                flex-direction: column;
+                gap: 0;
+            }
+
             &:last-child {
                 margin-top: 7rem;
+
+                @media screen and (max-width: 1024px) {
+                    margin-top: 0;
+                }
             }
 
             .process-grid-item {
@@ -29,32 +36,10 @@
                 flex-direction: column;
                 position: relative;
 
-                &.item-1,
-                &.item-2,
-                &.item-3,
-                &.item-4 {
-                    &::before {
-                        content: "";
-                        position: absolute;
-                        z-index: 3;
-                        top: -40px;
-                        left: -40px;
-                        width: 190px;
-                        height: 80px;
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                    }
-                    &::after {
-                        content: "";
-                        position: absolute;
-                        z-index: 3;
-                        width: 50px;
-                        height: 50px;
-                        background-size: contain;
-                        background-repeat: no-repeat;
-                        background-position: center;
-                    }
+                @media screen and (max-width: 1024px) {
+                    margin-top: 5rem;
+                    width: 70vw;
+                    height: 70vw;
                 }
 
                 &.item-1 {
@@ -88,11 +73,62 @@
                         right: 110%;
                         top: 45%;
                         rotate: 90deg;
+
+                        @media screen and (max-width: 1024px) {
+                            background-image: none;
+                        }
                     }
                 }
                 &.item-4 {
                     &::before {
                         background-image: url(../../../asetts/images/process/step-4.svg);
+                    }
+                    &::after {
+                        background-image: url(../../../asetts/images/arrow-bottom.svg);
+                    }
+                }
+
+                &.item-1,
+                &.item-2,
+                &.item-3,
+                &.item-4 {
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        z-index: 3;
+                        top: -40px;
+                        left: -40px;
+                        width: 190px;
+                        height: 80px;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+
+                        @media screen and (max-width: 1024px) {
+                            width: 150px;
+                            height: 60px;
+                            top: -20px;
+                            left: -40px;
+                        }
+                    }
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        z-index: 3;
+                        width: 50px;
+                        height: 50px;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+
+                        @media screen and (max-width: 1024px) {
+                            width: 30px;
+                            height: 30px;
+                            top: 110%;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            rotate: 0deg;
+                        }
                     }
                 }
 
@@ -105,6 +141,9 @@
                     margin-top: 2rem;
                     max-height: 100px;
                     width: 200px;
+                    @media screen and (max-width: 1024px) {
+                        width: 50%;
+                    }
 
                     img {
                         width: 100%;
@@ -122,12 +161,23 @@
                     text-align: center;
                     font-size: 1.25rem;
                     font-weight: 400;
+                    @media screen and (max-width: 1024px) {
+                        font-size: 0.9rem;
+                        width: 200px;
+                        bottom: 10%;
+                    }
 
                     ul {
                         list-style: none;
                         text-align-last: left;
                         width: 350px;
                         margin-left: -3rem;
+
+                        @media screen and (max-width: 1024px) {
+                            width: 250px;
+                            padding-left: 0;
+                            margin-left: 1rem;
+                        }
 
                         li {
                             &::before {
@@ -136,6 +186,34 @@
                         }
                     }
                 }
+            }
+        }
+    }
+    .process-decoration {
+        display: none;
+        height: 10rem;
+        position: relative;
+
+        @media screen and (max-width: 1024px) {
+            display: block;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: -4px;
+            left: 10vw;
+            width: 155px;
+            height: 170px;
+            background-image: url(../../../asetts/images/tree.png);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            @media screen and (max-width: 1024px) {
+                width: 120px;
+                height: 130px;
             }
         }
     }
