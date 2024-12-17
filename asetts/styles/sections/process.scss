@@ -44,10 +44,10 @@
 
                 &.item-1 {
                     &::before {
-                        background-image: url(../../../asetts/images/process/step-1.svg);
+                        background-image: url(../../asetts/images/process/step-1.svg);
                     }
                     &::after {
-                        background-image: url(../../../asetts/images/arrow-bottom.svg);
+                        background-image: url(../../asetts/images/arrow-bottom.svg);
                         top: 45%;
                         left: 110%;
                         rotate: -90deg;
@@ -55,10 +55,10 @@
                 }
                 &.item-2 {
                     &::before {
-                        background-image: url(../../../asetts/images/process/step-2.svg);
+                        background-image: url(../../asetts/images/process/step-2.svg);
                     }
                     &::after {
-                        background-image: url(../../../asetts/images/arrow-bottom.svg);
+                        background-image: url(../../asetts/images/arrow-bottom.svg);
                         left: 50%;
                         top: 110%;
                         transform: translateX(-50%);
@@ -66,10 +66,10 @@
                 }
                 &.item-3 {
                     &::before {
-                        background-image: url(../../../asetts/images/process/step-3.svg);
+                        background-image: url(../../asetts/images/process/step-3.svg);
                     }
                     &::after {
-                        background-image: url(../../../asetts/images/arrow-bottom.svg);
+                        background-image: url(../../asetts/images/arrow-bottom.svg);
                         right: 110%;
                         top: 45%;
                         rotate: 90deg;
@@ -81,10 +81,14 @@
                 }
                 &.item-4 {
                     &::before {
-                        background-image: url(../../../asetts/images/process/step-4.svg);
+                        background-image: url(../../asetts/images/process/step-4.svg);
                     }
                     &::after {
-                        background-image: url(../../../asetts/images/arrow-bottom.svg);
+                        background-image: url(../../asetts/images/arrow-bottom.svg);
+                        display: none;
+                        @media screen and (max-width: 1024px) {
+                            display: block;
+                        }
                     }
                 }
 
@@ -190,13 +194,8 @@
         }
     }
     .process-decoration {
-        display: none;
         height: 10rem;
         position: relative;
-
-        @media screen and (max-width: 1024px) {
-            display: block;
-        }
 
         &::after {
             content: "";
@@ -206,7 +205,7 @@
             left: 10vw;
             width: 155px;
             height: 170px;
-            background-image: url(../../../asetts/images/tree.png);
+            background-image: url(../../asetts/images/tree.png);
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;

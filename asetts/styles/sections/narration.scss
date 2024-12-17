@@ -1,7 +1,7 @@
 .narration {
     .narration-body {
         height: 50vw;
-        background-image: url(../../../asetts/images/narration.png);
+        background-image: url(../../asetts/images/narration.png);
         background-size: cover;
         background-position: center;
         padding: 2rem 6rem 0 6rem;
@@ -87,7 +87,7 @@
                     &::before {
                         content: "";
                         display: block;
-                        background-image: url(../../../asetts/images/check.png);
+                        background-image: url(../../asetts/images/check.png);
                         background-size: cover;
                         background-position: center;
                         margin-right: 1.5rem;

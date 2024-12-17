@@ -367,7 +367,7 @@ body {
   left: 10vw;
   width: 155px;
   height: 170px;
-  background-image: url(../../../asetts/images/tree.png);
+  background-image: url(../../asetts/images/tree.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -385,7 +385,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-image: url(../../../asetts/images/top-view.png);
+  background-image: url(../../asetts/images/top-view.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -572,7 +572,7 @@ body {
   display: block;
   width: 50px;
   height: 50px;
-  background-image: url(../../../asetts/images/arrow-symbol.svg);
+  background-image: url(../../asetts/images/arrow-symbol.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -587,8 +587,8 @@ body {
 .explanation .explanation-card .card[open] .card-headline img {
   transform: rotate(90deg);
 }
-.explanation .explanation-card .card[closed] .card-headline img {
-  transform: rotate(270deg);
+.explanation .explanation-card .card[close] .card-headline img {
+  transform: rotate(90deg);
 }
 .explanation .explanation-card .card {
   width: 70vw;
@@ -688,10 +688,20 @@ body {
   align-items: center;
   justify-content: center;
 }
+@media screen and (max-width: 512px) {
+  .explanation .explanation-card .card .card-content.content-2 {
+    flex-direction: column;
+  }
+}
 .explanation .explanation-card .card .card-content.content-2 .content-item {
   width: calc(49% - 1rem);
   padding: 1rem 2rem 1rem 1rem;
   position: relative;
+}
+@media screen and (max-width: 512px) {
+  .explanation .explanation-card .card .card-content.content-2 .content-item {
+    width: 90%;
+  }
 }
 .explanation .explanation-card .card .card-content.content-2 .content-item:last-child {
   padding: 1rem 1rem 1rem 2rem;
@@ -707,6 +717,28 @@ body {
   height: 80%;
   opacity: 0.5;
   background-color: var(--color-gray);
+}
+@media screen and (max-width: 512px) {
+  .explanation .explanation-card .card .card-content.content-2 .content-item:last-child::before {
+    display: none;
+  }
+}
+.explanation .explanation-card .card .card-content.content-2 .content-item:last-child::after {
+  content: "";
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 1px;
+  opacity: 0.5;
+  background-color: var(--color-gray);
+}
+@media screen and (max-width: 512px) {
+  .explanation .explanation-card .card .card-content.content-2 .content-item:last-child::after {
+    display: block;
+  }
 }
 .explanation .explanation-card .card .card-content.content-2 .content-item .item-img {
   height: 250px;
@@ -741,7 +773,7 @@ body {
 
 .narration .narration-body {
   height: 50vw;
-  background-image: url(../../../asetts/images/narration.png);
+  background-image: url(../../asetts/images/narration.png);
   background-size: cover;
   background-position: center;
   padding: 2rem 6rem 0 6rem;
@@ -844,7 +876,7 @@ body {
 .narration .narration-bubble .overlap .bubble-list .bubble-item::before {
   content: "";
   display: block;
-  background-image: url(../../../asetts/images/check.png);
+  background-image: url(../../asetts/images/check.png);
   background-size: cover;
   background-position: center;
   margin-right: 1.5rem;
@@ -983,7 +1015,7 @@ body {
   right: 20px;
   width: 260px;
   height: 170px;
-  background-image: url(../../../asetts/images/point/decoration-1.svg);
+  background-image: url(../../asetts/images/point/decoration-1.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1001,7 +1033,7 @@ body {
   right: 20px;
   width: 220px;
   height: 160px;
-  background-image: url(../../../asetts/images/point/decoration-2.svg);
+  background-image: url(../../asetts/images/point/decoration-2.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1096,13 +1128,13 @@ body {
   }
 }
 .points .point-list .point-item .point-text .point-headline.item-1::before {
-  background-image: url(../../../asetts/images/point/point-1.svg);
+  background-image: url(../../asetts/images/point/point-1.svg);
 }
 .points .point-list .point-item .point-text .point-headline.item-2::before {
-  background-image: url(../../../asetts/images/point/point-2.svg);
+  background-image: url(../../asetts/images/point/point-2.svg);
 }
 .points .point-list .point-item .point-text .point-headline.item-3::before {
-  background-image: url(../../../asetts/images/point/point-3.svg);
+  background-image: url(../../asetts/images/point/point-3.svg);
 }
 .points .point-list .point-item .point-text .point-desc {
   font-size: 1.25rem;
@@ -1178,7 +1210,7 @@ body {
   right: -20vw;
   width: 155px;
   height: 170px;
-  background-image: url(../../../asetts/images/tree.png);
+  background-image: url(../../asetts/images/tree.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1288,7 +1320,7 @@ body {
   left: -90px;
   width: 200px;
   height: 142px;
-  background-image: url(../../../asetts/images/intro/point.png);
+  background-image: url(../../asetts/images/intro/point.png);
   background-size: cover;
   background-position: center;
 }
@@ -1447,7 +1479,7 @@ body {
   left: 10vw;
   width: 155px;
   height: 170px;
-  background-image: url(../../../asetts/images/tree.png);
+  background-image: url(../../asetts/images/tree.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -1504,28 +1536,28 @@ body {
   }
 }
 .process .process-body .process-grid .process-grid-item.item-1::before {
-  background-image: url(../../../asetts/images/process/step-1.svg);
+  background-image: url(../../asetts/images/process/step-1.svg);
 }
 .process .process-body .process-grid .process-grid-item.item-1::after {
-  background-image: url(../../../asetts/images/arrow-bottom.svg);
+  background-image: url(../../asetts/images/arrow-bottom.svg);
   top: 45%;
   left: 110%;
   rotate: -90deg;
 }
 .process .process-body .process-grid .process-grid-item.item-2::before {
-  background-image: url(../../../asetts/images/process/step-2.svg);
+  background-image: url(../../asetts/images/process/step-2.svg);
 }
 .process .process-body .process-grid .process-grid-item.item-2::after {
-  background-image: url(../../../asetts/images/arrow-bottom.svg);
+  background-image: url(../../asetts/images/arrow-bottom.svg);
   left: 50%;
   top: 110%;
   transform: translateX(-50%);
 }
 .process .process-body .process-grid .process-grid-item.item-3::before {
-  background-image: url(../../../asetts/images/process/step-3.svg);
+  background-image: url(../../asetts/images/process/step-3.svg);
 }
 .process .process-body .process-grid .process-grid-item.item-3::after {
-  background-image: url(../../../asetts/images/arrow-bottom.svg);
+  background-image: url(../../asetts/images/arrow-bottom.svg);
   right: 110%;
   top: 45%;
   rotate: 90deg;
@@ -1536,10 +1568,16 @@ body {
   }
 }
 .process .process-body .process-grid .process-grid-item.item-4::before {
-  background-image: url(../../../asetts/images/process/step-4.svg);
+  background-image: url(../../asetts/images/process/step-4.svg);
 }
 .process .process-body .process-grid .process-grid-item.item-4::after {
-  background-image: url(../../../asetts/images/arrow-bottom.svg);
+  background-image: url(../../asetts/images/arrow-bottom.svg);
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .process .process-body .process-grid .process-grid-item.item-4::after {
+    display: block;
+  }
 }
 .process .process-body .process-grid .process-grid-item.item-1::before, .process .process-body .process-grid .process-grid-item.item-2::before, .process .process-body .process-grid .process-grid-item.item-3::before, .process .process-body .process-grid .process-grid-item.item-4::before {
   content: "";
@@ -1636,14 +1674,8 @@ body {
   content: "・";
 }
 .process .process-decoration {
-  display: none;
   height: 10rem;
   position: relative;
-}
-@media screen and (max-width: 1024px) {
-  .process .process-decoration {
-    display: block;
-  }
 }
 .process .process-decoration::after {
   content: "";
@@ -1653,7 +1685,7 @@ body {
   left: 10vw;
   width: 155px;
   height: 170px;
-  background-image: url(../../../asetts/images/tree.png);
+  background-image: url(../../asetts/images/tree.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;

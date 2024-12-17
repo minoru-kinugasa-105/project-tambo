@@ -2,8 +2,7 @@
 const mobileBodyElement = document.getElementById("mobile-body");
 const mobileBodyBtn = document.getElementById("mobile-body-btn");
 const [line1, line2, line3] = document.querySelectorAll(".line");
-
-mobileBodyBtn.addEventListener("click", () => {
+function mobileHeaderMove() {
     if (mobileBodyElement.style.display === "flex") {
         mobileBodyElement.style.display = "none";
         line1.style.transform = "rotate(0deg)";
@@ -17,6 +16,9 @@ mobileBodyBtn.addEventListener("click", () => {
         line2.style.marginTop = "-14px";
         line3.style.display = "none";
     }
+}
+mobileBodyBtn.addEventListener("click", () => {
+    mobileHeaderMove();
 });
 
 // view-more movement

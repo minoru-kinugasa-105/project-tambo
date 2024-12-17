@@ -30,7 +30,7 @@
             display: block;
             width: 50px;
             height: 50px;
-            background-image: url(../../../asetts/images/arrow-symbol.svg);
+            background-image: url(../../asetts/images/arrow-symbol.svg);
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
@@ -50,10 +50,10 @@
                 }
             }
         }
-        .card[closed] {
+        .card[close] {
             .card-headline {
                 img {
-                    transform: rotate(270deg);
+                    transform: rotate(90deg);
                 }
             }
         }
@@ -158,8 +158,15 @@
                     align-items: center;
                     justify-content: center;
 
+                    @media screen and (max-width: 512px) {
+                        flex-direction: column;
+                    }
+
                     .content-item {
                         width: calc(49% - 1rem);
+                        @media screen and (max-width: 512px) {
+                            width: 90%;
+                        }
                         padding: 1rem 2rem 1rem 1rem;
                         position: relative;
 
@@ -177,6 +184,26 @@
                                 height: 80%;
                                 opacity: 0.5;
                                 background-color: var(--color-gray);
+
+                                @media screen and (max-width: 512px) {
+                                    display: none;
+                                }
+                            }
+                            &::after {
+                                content: "";
+                                display: none;
+                                position: absolute;
+                                top: 0;
+                                left: 50%;
+                                transform: translateX(-50%);
+                                width: 80%;
+                                height: 1px;
+                                opacity: 0.5;
+                                background-color: var(--color-gray);
+                                
+                                @media screen and (max-width: 512px) {
+                                    display: block;
+                                }
                             }
                         }
 
