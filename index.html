@@ -62,6 +62,65 @@
 
         <!-- css import -->
         <link rel="stylesheet" href="asetts/styles/index.css" />
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-63W76HZ8ZE"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-63W76HZ8ZE");
+        </script>
+
+        <!-- Begin Mieruca Embed Code -->
+        <script type="text/javascript" id="mierucajs">
+            window.__fid = window.__fid || [];
+            __fid.push([815009860]);
+            (function () {
+                function mieruca() {
+                    if (typeof window.__fjsld != "undefined") return;
+                    window.__fjsld = 1;
+                    var fjs = document.createElement("script");
+                    fjs.type = "text/javascript";
+                    fjs.async = true;
+                    fjs.id = "fjssync";
+                    var timestamp = new Date();
+                    fjs.src =
+                        ("https:" == document.location.protocol ? "https" : "http") +
+                        "://hm.mieru-ca.com/service/js/mieruca-hm.js?v=" +
+                        timestamp.getTime();
+                    var x = document.getElementsByTagName("script")[0];
+                    x.parentNode.insertBefore(fjs, x);
+                }
+                setTimeout(mieruca, 500);
+                document.readyState != "complete"
+                    ? window.attachEvent
+                        ? window.attachEvent("onload", mieruca)
+                        : window.addEventListener("load", mieruca, false)
+                    : mieruca();
+            })();
+        </script>
+        <!-- End Mieruca Embed Code -->
+
+        <!-- Mieruca Optimize Tag -->
+        <script type="text/javascript" id="mierucaOptimizejs">
+            window.__optimizeid = window.__optimizeid || [];
+            __optimizeid.push([1002240333]);
+            (function () {
+                var fjs = document.createElement("script");
+                fjs.type = "text/javascript";
+                fjs.async = true;
+                fjs.id = "fjssync";
+                var timestamp = new Date();
+                fjs.src = "https://opt.mieru-ca.com/service/js/mieruca-optimize.js?v=" + timestamp.getTime();
+                var x = document.getElementsByTagName("script")[0];
+                x.parentNode.insertBefore(fjs, x);
+            })();
+        </script>
+        <!-- End Mieruca Optimize Tag -->
+         
     </head>
     <body>
         <header class="header">
@@ -177,7 +236,9 @@
                     <div class="card-content content-1">
                         <div class="content-text">
                             <p>
-                                「出張のたびに経費精算が大変…」そんな悩みを解決するのが旅費規程です！あらかじめルールを決めることで、経費管理が驚くほど簡単になります。<br />
+                                「出張のたびに経費精算が大変…」<br />
+                                そんな悩みを解決するのが旅費規程です！<br />
+                                あらかじめルールを決めることで、経費管理が驚くほど簡単になります。<br />
                                 さらに、税金のかからない出張手当を支給できるため、社員のポケットマネーが増えて働く意欲もアップ！会社にとっても、社員にとっても嬉しい仕組みです。
                             </p>
                         </div>
