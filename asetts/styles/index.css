@@ -1701,6 +1701,24 @@ body {
     margin-top: 1rem;
   }
 }
+.process .process-body .process-grid .process-grid-item.item-4 .item-img {
+  margin-top: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  .process .process-body .process-grid .process-grid-item.item-4 .item-img {
+    margin-top: 3rem;
+  }
+}
+@media screen and (max-width: 804px) {
+  .process .process-body .process-grid .process-grid-item.item-4 .item-img {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 512px) {
+  .process .process-body .process-grid .process-grid-item.item-4 .item-img {
+    margin-top: 1rem;
+  }
+}
 .process .process-body .process-grid .process-grid-item .item-tit {
   font-size: 1.5rem;
   font-weight: 500;
