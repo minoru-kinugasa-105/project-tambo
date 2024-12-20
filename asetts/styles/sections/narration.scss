@@ -13,6 +13,9 @@
         @media screen and (max-width: 512px) {
             height: 120vw;
         }
+        @media screen and (min-width: 2000px) {
+            height: 1000px;
+        }
 
         .body-tit {
             color: var(--color-white);
@@ -47,6 +50,9 @@
         }
         @media screen and (max-width: 512px) {
             margin-top: -70vw;
+        }
+        @media screen and (min-width: 2000px) {
+            margin-top: -430px;
         }
 
         .overlap {

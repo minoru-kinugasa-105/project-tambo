@@ -31,6 +31,9 @@
         @media screen and (max-width: 1024px) {
             width: 95vw;
         }
+        @media screen and (min-width: 2100px) {
+            max-width: 1700px;
+        }
 
         .point-item {
             margin-top: 4rem;
@@ -95,11 +98,11 @@
                 }
                 &::before {
                     position: absolute;
-                    top: -20%;
-                    left: -25%;
+                    top: -10vw;
+                    left: -50vw;
                     content: "";
                     display: block;
-                    width: 150%;
+                    width: 200vw;
                     height: 450px;
                     background-color: var(--color-yellowgreen-100);
                     rotate: 355deg;
@@ -107,6 +110,9 @@
 
                     @media screen and (max-width: 1024px) {
                         display: none;
+                    }
+                    @media screen and (min-width: 2000px) {
+                        top: -10vw;
                     }
                 }
             }

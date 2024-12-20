@@ -769,8 +769,13 @@ body {
 }
 .explanation .explanation-card .card .card-content.content-2 .content-item .item-img img {
   margin-bottom: 2rem;
-  width: 100%;
+  width: 75%;
   height: auto;
+}
+@media screen and (min-width: 1700px) {
+  .explanation .explanation-card .card .card-content.content-2 .content-item .item-img img {
+    width: 350px;
+  }
 }
 .explanation .explanation-card .card .card-content.content-2 .content-item .item-text {
   margin-left: 1rem;
@@ -817,6 +822,11 @@ body {
     height: 120vw;
   }
 }
+@media screen and (min-width: 2000px) {
+  .narration .narration-body {
+    height: 1000px;
+  }
+}
 .narration .narration-body .body-tit {
   color: var(--color-white);
   font-weight: 500;
@@ -860,6 +870,11 @@ body {
 @media screen and (max-width: 512px) {
   .narration .narration-bubble {
     margin-top: -70vw;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .narration .narration-bubble {
+    margin-top: -430px;
   }
 }
 .narration .narration-bubble .overlap {
@@ -1030,6 +1045,11 @@ body {
     width: 95vw;
   }
 }
+@media screen and (min-width: 2100px) {
+  .points .point-list {
+    max-width: 1700px;
+  }
+}
 .points .point-list .point-item {
   margin-top: 4rem;
   display: flex;
@@ -1087,11 +1107,11 @@ body {
 }
 .points .point-list .point-item.item-2_bg::before {
   position: absolute;
-  top: -20%;
-  left: -25%;
+  top: -10vw;
+  left: -50vw;
   content: "";
   display: block;
-  width: 150%;
+  width: 200vw;
   height: 450px;
   background-color: var(--color-yellowgreen-100);
   rotate: 355deg;
@@ -1100,6 +1120,11 @@ body {
 @media screen and (max-width: 1024px) {
   .points .point-list .point-item.item-2_bg::before {
     display: none;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .points .point-list .point-item.item-2_bg::before {
+    top: -10vw;
   }
 }
 .points .point-list .point-item .point-img {
@@ -1295,8 +1320,8 @@ body {
   position: absolute;
   display: block;
   bottom: 0;
-  left: -6%;
-  width: 126%;
+  left: -5%;
+  width: 110%;
   height: 16px;
   border-radius: 16px;
   background-color: var(--color-yellowgreen-500_transparent);
@@ -1912,6 +1937,11 @@ body {
     margin-left: 5%;
   }
 }
+@media screen and (max-width: 400px) {
+  .voice .voice-container .voice-grid .grid-item .item-body .item-post {
+    font-size: 0.4rem;
+  }
+}
 .voice .voice-container .voice-grid .grid-item .item-body .item-author {
   display: flex;
   gap: 1rem;
@@ -1937,6 +1967,17 @@ body {
 @media screen and (max-width: 512px) {
   .voice .voice-container .voice-grid .grid-item .item-body .item-author .author-intro .author-name {
     font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .voice .voice-container .voice-grid .grid-item .item-body .item-author .author-intro .author-name {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .voice .voice-container .voice-grid .grid-item .item-body .item-author .author-intro .author-name {
+    margin-top: 0.3rem;
+    font-size: 0.8rem;
   }
 }
 .voice .voice-container .voice-grid .grid-item .item-body .item-author .author-intro .author-img {
@@ -1969,6 +2010,12 @@ body {
 @media screen and (max-width: 512px) {
   .voice .voice-container .voice-grid .grid-item .item-body .item-author .author-desc {
     font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .voice .voice-container .voice-grid .grid-item .item-body .item-author .author-desc {
+    font-size: 0.5rem;
+    width: 57%;
   }
 }
 .voice .voice-container .voice-grid .grid-item .item-body .item-author .author-desc br {
